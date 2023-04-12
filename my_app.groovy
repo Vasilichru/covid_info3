@@ -8,7 +8,7 @@ pipeline {
 			yamlFile "ci/spec.yaml"
 		}
 	}
-
+    triggers { pollSCM('* * * * *') }
     parameters {
     }
 
