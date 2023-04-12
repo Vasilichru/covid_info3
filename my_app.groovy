@@ -5,14 +5,10 @@ pipeline {
 		kubernetes {
 			label "kubeagent"
 			defaultContainer "jnlp"
-			yamlFile "ci/spec.yaml"
+			yamlFile "spec.yaml"
 		}
 	}
     triggers { pollSCM('* * * * *') }
-    parameters {
-    }
-
-
     options {
         timestamps()
     }
