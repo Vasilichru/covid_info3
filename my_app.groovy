@@ -26,7 +26,9 @@ pipeline {
     stages {
         //test stage
         stage('test') {
-            echo '===== TEST ====='
+		steps {
+			echo '===== TEST ====='	
+		}
         }
 
 
