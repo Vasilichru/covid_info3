@@ -4,7 +4,7 @@ pipeline {
     agent {
 		kubernetes {
 			label "jenkins"
-			defaultContainer "jnlp"
+		//	defaultContainer "jnlp"
 		//	yamlFile "spec.yaml"
 		}
 	}
