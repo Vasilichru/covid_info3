@@ -23,7 +23,7 @@ pipeline {
         //test stage
         stage('test') {
 		steps {
-			echo '===== TEST 2====='	
+			echo '===== TEST 3====='	
 		}
         }
     }
