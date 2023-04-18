@@ -3,7 +3,7 @@
         spec:
           containers:
           - name: maven
-            image: docker
+            image: docker.io/docker:latest
             command:
             - docker version
               docker build hello-world
