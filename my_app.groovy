@@ -25,7 +25,7 @@ pipeline {
 		steps {
         		container('maven') {
           		sh 'mvn -version'
-			echo '===== TEST 3====='
+			echo '===== TEST 4====='
 			}
 		}
         }
