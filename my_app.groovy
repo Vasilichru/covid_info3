@@ -3,7 +3,7 @@ pipeline {
     //Kubernetes agent for dynamic slave/pod configuration
     agent {
 		kubernetes {
-			label "jenkins"
+		//	label "jenkins"
 		//	defaultContainer "alpine"
 			yamlFile "spec.yaml"
 		}
