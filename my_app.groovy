@@ -23,6 +23,8 @@ pipeline {
         //test stage
         stage('test') {
 		steps {
+        		container('maven') {
+          		sh 'mvn -version'
 			echo '===== TEST 3====='	
 		}
         }
