@@ -8,7 +8,7 @@ pipeline {
 			yamlFile "spec.yaml"
 		}
 	}
-    triggers { pollSCM('* * * * *') }
+    //triggers { pollSCM('* * * * *') }
     options {
         timestamps()
     }
