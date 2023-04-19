@@ -5,7 +5,7 @@
         spec:
           containers:
           - name: docker
-            image: Vasilichru/docker:latest
+            image: docker
             imagePullPolicy: Always
             command: [ "echo", "SUCCESS" ]
           imagePullSecrets:
