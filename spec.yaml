@@ -5,8 +5,8 @@
           - name: maven
             image: maven:3-eclipse-temurin-8-alpine
             command:
-            - docker version
-              docker build hello-world
+            #- docker version
+            #  docker build hello-world
               cat
             
             tty: true
