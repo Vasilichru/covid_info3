@@ -5,7 +5,7 @@ pipeline {
 		kubernetes {
 		//	label "jenkins"
 		//	defaultContainer "alpine"
-			yamlFile "spec.yaml"
+		//	yamlFile "spec.yaml"
 		}
 	}
     //triggers { pollSCM('* * * * *') }
@@ -36,14 +36,14 @@ pipeline {
                   // DOCKER HUB
                   
                   /* Build the container image */            
-                  //def dockerImage = docker.build("my-image:${env.BUILD_ID}")
+                  def dockerImage = docker.build("my-image:test")
                         
                   /* Push the container to the docker Hub */
-                  //dockerImage.push()
+                  dockerImage.push()
 
                   /* Remove docker image*/
                   //sh 'docker rmi -f my-image:${env.BUILD_ID}'
-		  sh 'docker images'
+		  sh 'echo its ok images'
 
                 } 
             } 
