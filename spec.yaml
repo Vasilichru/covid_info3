@@ -1,12 +1,13 @@
         apiVersion: v1
         kind: Pod
+        metadata:
+          name: my_app
         spec:
           containers:
-          - name: maven
-            image: maven:3-eclipse-temurin-8-alpine
-            command:
-            #- docker version
-            #  docker build hello-world
-              cat
-            
-            tty: true
+          - name: dind
+            image: dind
+            imagePullPolicy: Always
+            command: [ "echo", "SUCCESS" ]
+          imagePullSecrets:
+          - name: myregistrykey
+
