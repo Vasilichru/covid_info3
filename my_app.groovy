@@ -5,7 +5,7 @@ pipeline {
 		kubernetes {
 		//	label "jenkins"
 		//	defaultContainer "alpine"
-			yamlFile "spec.yaml"
+		//	yamlFile "spec.yaml"
 		}
 	}
     //triggers { pollSCM('* * * * *') }
@@ -21,14 +21,34 @@ pipeline {
 
     stages {
         //test stage
-        stage('test') {
+ /*       stage('test') {
 		steps {
         		container('maven') {
-          		sh 'mvn -version'
+          		//sh 'mvn -version'
 			echo '===== TEST 4====='
 			}
 		}
+        } */
+	
+        stage('Build and Push Docker Image...') {
+          steps {
+                script {
+                  // DOCKER HUB
+                  
+                  /* Build the container image */            
+                  //def dockerImage = docker.build("my-image:${env.BUILD_ID}")
+                        
+                  /* Push the container to the docker Hub */
+                  //dockerImage.push()
+
+                  /* Remove docker image*/
+                  //sh 'docker rmi -f my-image:${env.BUILD_ID}'
+		  sh 'docker images'
+
+                } 
+            } 
         }
     }
+	
 }
 
