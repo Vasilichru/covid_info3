@@ -5,7 +5,7 @@
         spec:
           containers:
           - name: docker
-            image: vasilichru/docker
+            image: 192.168.1.74:5000/docker
             imagePullPolicy: Always
             command: [ "echo", "SUCCESS" ]
           imagePullSecrets:
