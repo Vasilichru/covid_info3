@@ -5,7 +5,7 @@
         spec:
           containers:
           - name: docker
-            image: 192.168.1.74:5000/docker
+            image: DOCKER_USER/docker:latest
             imagePullPolicy: Always
             command: [ "echo", "SUCCESS" ]
           imagePullSecrets:
