@@ -6,8 +6,5 @@
           containers:
           - name: docker
             image: docker
-            imagePullPolicy: Always
             command: [ "echo", "SUCCESS" ]
-          imagePullSecrets:
-          - name: myregistrykey
-
+    
