@@ -4,7 +4,7 @@ pipeline {
     agent {
 		kubernetes {
 		//	label "jenkins"
-			defaultContainer "docker"
+		//	defaultContainer "docker"
 		//	yamlFile "spec.yaml"
 		}
 	} 
