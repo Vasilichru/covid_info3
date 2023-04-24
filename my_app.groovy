@@ -5,7 +5,7 @@ pipeline {
 		kubernetes {
 		//	label "jenkins"
 		//	defaultContainer "dind"
-			yamlFile "spec.yaml"
+			//yamlFile "spec.yaml"
 		}
 	}
     //triggers { pollSCM('* * * * *') }
