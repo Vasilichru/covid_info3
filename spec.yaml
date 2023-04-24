@@ -5,7 +5,7 @@
         spec:
           containers:
           - name: docker
-            image: DOCKER_USER/PRIVATE_REPO_NAME:latest
+            image: DOCKER_USER/DOCKER_REGISTRY_SERVER:latest
             imagePullPolicy: Always
             command: [ "echo", "SUCCESS" ]
           imagePullSecrets:
