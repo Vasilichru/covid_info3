@@ -2,10 +2,9 @@
 pipeline {
     //Kubernetes agent for dynamic slave/pod configuration
     agent {
-		docker /*kubernetes*/ {
-			image "docker"
+		kubernetes {
 		//	label "jenkins"
-		//	defaultContainer "dind"
+			defaultContainer "docker"
 		//	yamlFile "spec.yaml"
 		}
 	} 
