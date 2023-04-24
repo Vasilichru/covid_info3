@@ -1,13 +1,13 @@
 
 pipeline {
     //Kubernetes agent for dynamic slave/pod configuration
-    agent any /*{
+    agent any {
 		kubernetes {
 		//	label "jenkins"
 		//	defaultContainer "dind"
-			//yamlFile "spec.yaml"
+		//	yamlFile "spec.yaml"
 		}
-	} */
+	} 
     //triggers { pollSCM('* * * * *') }
     options {
         timestamps()
